@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  endpoint: 'https://us-central1-sctdgc.cloudfunctions.net'
+  endpoint: "https://us-central1-sctdgc.cloudfunctions.net",
+  googleMapsToken: "",
 };
 
 /*
