@@ -12,4 +12,8 @@ export class HttpServiceService {
     return this.http
       .get(`${environment.endpoint}/app/api/empleado`)
   }
+
+  postData(data) {
+    return this.http.post(`${environment.endpoint}/app/api/empleado`, data);
+  }
 }
