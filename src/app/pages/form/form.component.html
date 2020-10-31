@@ -1,1 +1,11 @@
-<p>form works!</p>
+<div class="d-flex justify-content-center">
+  <form #form="ngForm" (ngSubmit)="enviar(form.value)">
+    <div class="form-group ml-3 mr-3 text-center align-items-center">
+
+      <label for="aa">Inserte el parámetro aa</label>
+      <input type="text" name="aa" id="aa" class="form-control" ngModel>
+
+      <input type="submit" class="btn btn-success btn-block btn-lg" value="Enviar" />
+    </div>
+  </form>
+</div>
