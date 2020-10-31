@@ -6,10 +6,10 @@ import { environment } from "../environments/environment";
 })
 export class HttpServiceService {
 
-  constructor(private htpp: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   getData() {
-    return this.htpp
+    return this.http
       .get(`${environment.endpoint}/app/api/empleado`)
   }
 }
